@@ -1,0 +1,65 @@
+body{
+	margin:0;
+	font-family:Arial;
+}
+
+/*header*/
+#header h1{
+	padding:30px;
+	margin:0;
+	color:white;
+	background-color:#4CAF50;
+}
+
+/*navbar list*/
+.navbar ul{
+	list-style-type: none;
+    margin: 0;
+    padding-right: 30px;
+	overflow: hidden;
+    background-color: #333;
+}
+
+.navbar li{
+	float:left;
+	overflow:hidden;
+}
+
+.navbar .homeicon{
+	background-color: #4CAF50 !important;
+}
+
+.navbar li a:link,a:visited{
+	display: block;
+	font-weight:bold;
+	font-size:20px;
+	color:white;
+	text-align:center;
+	padding:14px 16px 14px 16px;
+	text-decoration:none;
+	text-transform:uppercase;
+	transition: all 0.3s ease;
+}
+
+.navbar li a:hover{
+	padding:14px 16px 14px 16px;
+	background-color: #111;
+}
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+Page content 
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
