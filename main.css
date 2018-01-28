@@ -1,23 +1,38 @@
 body{
 	margin:0;
 	font-family:Arial;
+	background-color: #c9bb8e;
 }
 
 /*header*/
-#header h1{
-	padding:30px;
-	margin:0;
+.header{
+	background-color:#1f4a51;
 	color:white;
-	background-color:#4CAF50;
+    padding: 16px 0px 10px 15px;
 }
 
+.header .brand{
+	font-family: 'Dosis', sans-serif !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    height: inherit;
+    font-size: 36px;
+}
+
+.header a{
+	text-decoration:none;
+}
+
+.header .brand span{
+	font-weight: 100 !important;
+}
 /*navbar list*/
 .navbar ul{
 	list-style-type: none;
     margin: 0;
     padding-right: 30px;
 	overflow: hidden;
-    background-color: #333;
+    background-color: #25222d;
 }
 
 .navbar li{
@@ -26,24 +41,39 @@ body{
 }
 
 .navbar .homeicon{
-	background-color: #4CAF50 !important;
+	height:100%;
 }
 
 .navbar li a:link,a:visited{
 	display: block;
 	font-weight:bold;
-	font-size:20px;
+	font-size:15px;
 	color:white;
 	text-align:center;
-	padding:14px 16px 14px 16px;
+	padding:5px 16px 5px 16px;
 	text-decoration:none;
 	text-transform:uppercase;
 	transition: all 0.3s ease;
 }
 
 .navbar li a:hover{
-	padding:14px 16px 14px 16px;
-	background-color: #111;
+	font-size:16px;
+	background-color: #a21c34;
+}
+
+/* SideBar */
+#sidebar-left{
+	position:fixed;
+	height:100%;
+	width:15%;
+	background-color: #c9bb8e;
+	}
+
+
+/*content*/
+.box{
+	background-color:#a98972;
+	margin-left:15%;
 }
 
 
@@ -51,13 +81,13 @@ body{
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 Page content 
 .content {
-  padding: 16px;
+  padding: 50px;
 }
 
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%
+  width: 100%;
 }
 
 .sticky + .content {
