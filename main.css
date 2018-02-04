@@ -33,6 +33,29 @@ a, a:hover, a:focus {
 }
 
 /* ---------------------------------------------------
+    NAVBAR STYLE
+----------------------------------------------------- */
+.navbar-inverse{
+	margin-bottom:0px;
+	padding-bottom:0px;
+	border-radius:0px;
+}
+/* ---------------------------------------------------
+    STICKYBAR STYLE
+----------------------------------------------------- */
+#stickybar {
+  overflow: hidden;
+  background-color: #333;
+  width:100%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
 .wrapper {
@@ -41,7 +64,7 @@ a, a:hover, a:focus {
 }
 
 #sidebar {
-	margin-top:-20px;
+	/* margin-top:-20px; */
     min-width: 250px;
     max-width: 250px;
     background: #7386D5;
@@ -89,11 +112,37 @@ a, a:hover, a:focus {
     CONTENT STYLE
 ----------------------------------------------------- */
 #content {
-    padding: 20px;
+    padding: 0px;
 	background:#fff;
     min-height: 100vh;
     transition: all 0.3s;
 }
+
+/* ---------------------------------------------------
+    FOOTER STYLE
+----------------------------------------------------- */
+
+footer {
+	padding:20px 50px 0px 50px;
+	color:#fff;
+	border-top:1px solid #ccc;
+}
+
+footer p {
+	color:#666;
+	margin:0;
+	font-size:11px;
+	width:50%;
+}
+footer p.left { float:left; text-align:left; }
+footer p.right { float:right; text-align:right; }
+footer p a {
+	color:#666;
+	font-weight:bold;
+	text-decoration:none;
+	border-bottom:1px solid #999;
+}
+footer p a:hover { color:#0C3A85; border-bottom-color: #0C3A85; }
 
 /* ---------------------------------------------------
     MEDIAQUERIES
