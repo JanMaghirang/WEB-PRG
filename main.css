@@ -1,65 +1,160 @@
-body{
-	margin:0;
-	font-family:Arial;
+/*
+    DEMO STYLE
+*/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
 }
 
-/*header*/
-#header h1{
-	padding:30px;
-	margin:0;
-	color:white;
-	background-color:#4CAF50;
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
 }
 
-/*navbar list*/
-.navbar ul{
-	list-style-type: none;
-    margin: 0;
-    padding-right: 30px;
-	overflow: hidden;
-    background-color: #333;
-}
-
-.navbar li{
-	float:left;
-	overflow:hidden;
-}
-
-.navbar .homeicon{
-	background-color: #4CAF50 !important;
-}
-
-.navbar li a:link,a:visited{
-	display: block;
-	font-weight:bold;
-	font-size:20px;
-	color:white;
-	text-align:center;
-	padding:14px 16px 14px 16px;
-	text-decoration:none;
-	text-transform:uppercase;
-	transition: all 0.3s ease;
-}
-
-.navbar li a:hover{
-	padding:14px 16px 14px 16px;
-	background-color: #111;
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
 }
 
 
 
-/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-Page content 
-.content {
-  padding: 16px;
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    NAVBAR STYLE
+----------------------------------------------------- */
+.navbar-inverse{
+	margin-bottom:0px;
+	padding-bottom:0px;
+	border-radius:0px;
+}
+/* ---------------------------------------------------
+    STICKYBAR STYLE
+----------------------------------------------------- */
+#stickybar {
+  overflow: hidden;
+  background-color: #333;
+  width:100%;
 }
 
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%
+  width: 100%;
 }
 
-.sticky + .content {
-  padding-top: 102px;
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar {
+	/* margin-top:-20px; */
+    min-width: 250px;
+    max-width: 250px;
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
+	float:left;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #6d7fcc;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+}
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+#content {
+    padding: 0px;
+	background:#fff;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+/* ---------------------------------------------------
+    FOOTER STYLE
+----------------------------------------------------- */
+
+footer {
+	padding:20px 50px 0px 50px;
+	color:#fff;
+	border-top:1px solid #ccc;
+}
+
+footer p {
+	color:#666;
+	margin:0;
+	font-size:11px;
+	width:50%;
+}
+footer p.left { float:left; text-align:left; }
+footer p.right { float:right; text-align:right; }
+footer p a {
+	color:#666;
+	font-weight:bold;
+	text-decoration:none;
+	border-bottom:1px solid #999;
+}
+footer p a:hover { color:#0C3A85; border-bottom-color: #0C3A85; }
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
 }
