@@ -83,6 +83,7 @@ a, a:hover, a:focus {
 	padding-bottom:5px;
 	color: #000000;
 	font-size:16px;
+	width: 220px;
 }
 
 .navbar-fixed-left .navbar-nav > li > a:hover {
@@ -191,18 +192,26 @@ footer p a:hover { color:#0C3A85; border-bottom-color: #0C3A85; }
     MEDIAQUERIES
 ----------------------------------------------------- */
 @media (max-width: 768px) {
+	
+	.navbar-fixed-left > #ctg{
+		/* padding-left:20px; */
+		text-align:left;
+		color:#cc0000;
+	}
+
     .navbar-fixed-left {
-        width:100px;
+        width:130px;
     }
 	
 	.navbar-fixed-left .navbar-nav > li{
 		text-align:center;
 		float: none;
-		width: 100px;
+		width: 130px;
 	}
 	
 	.navbar-fixed-left .navbar-nav > li > a {
 		font-size:12px;
+		width: 130px;
 	}
 	
 	.navbar-fixed-left::-webkit-scrollbar-thumb {
