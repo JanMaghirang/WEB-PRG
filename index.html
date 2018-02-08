@@ -52,9 +52,9 @@
 </nav>
 
 <!-- Sidebar Holder  -->
-<div class="navbar navbar-inverse navbar-fixed-left">
-	<a class="navbar-brand" href="#">Brand</a>
+<div class="navbar navbar-fixed-left">
 	<ul class="nav navbar-nav">
+		<li><a href="#">Link1</a></li>
 		<li><a href="#">Link2</a></li>
 		<li><a href="#">Link3</a></li>
 		<li><a href="#">Link4</a></li>
@@ -146,13 +146,7 @@
 
 
 
-<!-- jQuery CDN -->
-        <script src="js/jquery-1.12.0.min.js"></script>
-        <!-- Bootstrap Js CDN -->
-        <script src="js/bootstrap.min.js"></script>
-        <!-- jQuery Custom Scroller CDN -->
-        <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-		
+<!-- jQuery CDN -->	
         <script type="text/javascript">
             $('#signUp').on('shown.bs.modal', function () {
    				 $('#inputFirstName').focus();
@@ -174,20 +168,5 @@
                 });
             });
         </script>
-		
-		<script>
-		window.onscroll = function() {myFunction()};
-
-		var navbar = document.getElementById("stickybar");
-		var sticky = navbar.offsetTop;
-
-		function myFunction() {
-			if (window.pageYOffset >= sticky) {
-				navbar.classList.add("sticky")
-			} else {
-				navbar.classList.remove("sticky");
-			}
-		}
-		</script>
 </body>
 </html>
