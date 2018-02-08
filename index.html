@@ -49,8 +49,8 @@
 			</form>
 			
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+				<li><a href="#signUp" role="button"  data-toggle="modal"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+				<li><a href="#logIn" role="button"  data-toggle="modal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 			</ul>
 		</div>
 	</div>
@@ -98,6 +98,68 @@
     </div>
 </div>
 
+<div id="signUp" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">SIGN UP</h4>
+            </div>
+            <form class="">
+				<div class="form-group">
+					<label for="inputFirstName">First Name</label>
+					<input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
+				</div>
+				<div class="form-group">
+					<label for="inputLastName">Last Name</label>
+					<input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+				</div>
+				<div class="form-group">
+					<label for="inputEmail">Email</label>
+					<input type="email" class="form-control" id="inputEmail" placeholder="Email">
+				</div>
+				<div class="form-group">
+					<label for="inputPassword">Password</label>
+					<input type="password" class="form-control" id="inputPassword" placeholder="Password">
+				</div>
+				<div class="form-group">
+					<label for="repeatPassword">Repeat Password</label>
+					<input type="password" class="form-control" id="repeatPassword" placeholder="Password">
+				</div>
+			</form>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Proceed</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="logIn" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">LOG IN</h4>
+            </div>
+            <form class="">
+				<div class="form-group">
+					<label for="inputEmail2">Email</label>
+					<input type="email" class="form-control" id="inputEmail2" placeholder="Email">
+				</div>
+				<div class="form-group">
+					<label for="inputPassword2">Password</label>
+					<input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+				</div>
+			</form>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Proceed</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <footer class="clear">
 	<div  class="width">
 		<p class="left">&copy; 2014 sitename.</p>
@@ -113,7 +175,15 @@
         <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 
         <script type="text/javascript">
-            $(document).ready(function () {
+            $('#signUp').on('shown.bs.modal', function () {
+   				 $('#inputFirstName').focus();
+			});
+
+			$('#logIn').on('shown.bs.modal', function () {
+   				 $('#inputEmail2').focus();
+			});
+
+			$(document).ready(function () {
                 $("#sidebar").mCustomScrollbar({
                     theme: "minimal"
                 });
