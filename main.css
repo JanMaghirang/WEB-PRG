@@ -36,7 +36,7 @@ a, a:hover, a:focus {
 /* ---------------------------------------------------
     NAVBAR STYLE
 ----------------------------------------------------- */
-.navbar-inverse{
+.navbar-fixed-top{
 	margin-bottom:0px;
 	padding-bottom:0px;
 	border-radius:0px;
@@ -60,43 +60,75 @@ a, a:hover, a:focus {
     SIDEBAR STYLE
 ----------------------------------------------------- */
 .navbar-fixed-left {
-  width: 140px;
-  position: fixed;
-  border-radius: 0;
-  height: 100%;
+	margin-top:20px;
+	padding-top:40px;
+	width: 220px;
+	position: fixed;
+	border-radius: 0;
+	border:0px;
+	height: 100%;
+	background:#fff;
 }
 
 .navbar-fixed-left .navbar-nav > li {
-  float: none;  /* Cancel default li float: left */
-  width: 139px;
+	text-align:center;
+	padding-left:50px;
+	float: none;
+	width: 220px;
+}
+
+.navbar-fixed-left .navbar-nav > li > a {
+  color: #000000;
+  font-size:16px;
+}
+
+.navbar-fixed-left .navbar-nav > li > a:hover {
+  color: #fff;
+  background:#404040;
 }
 
 .navbar-fixed-left + .container {
   padding-left: 160px;
 }
 
-/* On using dropdown menu (To right shift popuped) */
-.navbar-fixed-left .navbar-nav > li > .dropdown-menu {
-  margin-top: -50px;
-  margin-left: 140px;
-}
+
 
 
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
 #content {
-    padding: 0px;
+    margin: 0px 10px 10px 270px;
+	padding-top:90px;
 	background:#fff;
     min-height: 100vh;
     transition: all 0.3s;
 }
+
+#content img{
+	border:solid 10px;
+	border-style:outset;
+	text-align:center;
+}
+
+/* ---------------------------------------------------
+    CONTAINER STYLE
+----------------------------------------------------- */
+.img-container header{
+	font-size:40px;
+}
+
+.img-container .user{
+	color:red;
+}
+
 
 /* ---------------------------------------------------
     FOOTER STYLE
 ----------------------------------------------------- */
 
 footer {
+	margin-left:220px;
 	padding:20px 50px 0px 50px;
 	color:#fff;
 	border-top:1px solid #ccc;
@@ -122,13 +154,15 @@ footer p a:hover { color:#0C3A85; border-bottom-color: #0C3A85; }
     MEDIAQUERIES
 ----------------------------------------------------- */
 @media (max-width: 768px) {
-    #sidebar {
+    .navbar-fixed-left {
         margin-left: -250px;
     }
-    #sidebar.active {
-        margin-left: 0;
-    }
-    #sidebarCollapse span {
-        display: none;
-    }
+	
+	#content {
+    margin: 0px 10px 10px 10px;
+	padding-top:60px;
+	background:#fff;
+    min-height: 100vh;
+    transition: all 0.3s;
+	}
 }
