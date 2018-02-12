@@ -21,50 +21,80 @@
 
 <body>
 <!--Header-->
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav id="navi" class="navbar navbar-inverse">
 	<div class="container-fluid">	
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>                        
+			<button type="button" id="drawerCollapse" class="btn btn-info navbar-btn">
+				<i class="glyphicon glyphicon-menu-hamburger"></i>
 			</button>
 			<a class="navbar-brand" href="index.html">THINKING<span>POD</span></a>
-		</div>
-		
-		<div class="collapse navbar-collapse" id="myNavbar">
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="post.html" role="button" class="upload" ><span class="glyphicon glyphicon-plus"></span>Post</a></li>
-				<li><a href="images.html" role="button"  ><span class="glyphicon glyphicon-picture"></span>Photos</a></li>
-				<li><a href="index.html" role="button"  ><span class="glyphicon glyphicon-log-out"></span>Log Out</a></li>
-			</ul>
-			
-			<form class="navbar-form navbar-left" action="/action_page.php">
-				<div class="input-group">
-					<input type="text" class="form-control" placeholder="Search" name="search">
-					<div class="input-group-btn">
-						<button class="btn" type="submit">
-							<i class="glyphicon glyphicon-search"></i>
-						</button>
-					</div>
-				</div>
-			</form>
-			
-			
 		</div>
 	</div>
 </nav>
 
-<!--SideNav-->
-    <div class="navbar navbar-inverse navbar-fixed-left">
+<!--Drawer-->
+<nav id="drawer">		
+	<div id="drawer-header">
+        <h3>THINKPOD</h3>
+    </div>
+			
+	<form> 
+		<input type="text" name="search" placeholder="Search">
+	</form> 
+	
+	<div id="dismiss">
+        <i class="glyphicon glyphicon-arrow-left"></i>
+    </div>
+			
+	<div class="user-group">
+		<ul class="nav navbar-nav navbar-right">
+				<li><a href="post.html" role="button" class="upload" ><span class="glyphicon glyphicon-plus"></span>Post</a></li>
+				<li><a href="images.html" role="button"  ><span class="glyphicon glyphicon-picture"></span>Photos</a></li>
+				<li><a href="index.html" role="button"  ><span class="glyphicon glyphicon-log-out"></span>Log Out</a></li>
+			</ul>
+	</div>
+	
+	<div class="drawer-list">
 		<p id="ctg">Popular</p>
-		<ul class="nav navbar-nav">
+		<ul class="list-unstyled components">
 			<li><a href="#">New</a></li>
 			<li><a href="#">Hot</a></li>
 			<li><a href="#">Trending</a></li>
 		</ul>
-		<br><br><br><br><br>
+				
+		<p id="ctg">Categories</p>
+		<ul class="list-unstyled components">
+			<li><a href="#">Comedy</a></li>
+			<li><a href="#">Romance</a></li>
+			<li><a href="#">Musical</a></li>
+			<li><a href="#">Action</a></li>
+			<li><a href="#">Drama</a></li>
+			<li><a href="#">Documentary</a></li>
+			<li><a href="#">Horror</a></li>
+			<li><a href="#">Animation</a></li>
+			<li><a href="#">Thriller</a></li>
+		</ul>
+	<div>
+            
+</nav>
 
+<!--StickyNav-->
+	<div id="stickybar">
+		<a href="#">New</a>
+		<a href="#">Hot</a>
+		<a href="#">Trending</a>
+	
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="post.html" role="button" class="upload" ><span class="glyphicon glyphicon-plus"></span> Post</a></li>
+			<li><a href="images.html" role="button"  ><span class="glyphicon glyphicon-picture"></span> Photos</a></li>
+			<li><a href="index.html" role="button"  ><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+		</ul>
+	</div>
+		
+	</div>
+
+<!--SideNav-->
+    <div class="navbar navbar-inverse navbar-fixed-left">
 		<p id="ctg">Categories</p>
 		<ul class="nav navbar-nav">
 			<li><a href="#">Comedy</a></li>
@@ -83,7 +113,9 @@
     <div id="content">		
 		<div class="img-container">
 			<header>LOL	</header>
-			<img src="download.jpg"> <span class="glyphicon glyphicon-plus"></span><img src="clown.jpg"><span class="glyphicon glyphicon-arrow-right"><img src="download2.jpg">	
+			<img src="download.jpg"> <span class="glyphicon glyphicon-plus"></span>
+			<img src="clown.jpg"> <span class="glyphicon glyphicon-arrow-right"></span>
+			<img src="download2.jpg">	
 		</div>
 		<div><span>by </span><span class="user">ONICHAN </span></div>
         
@@ -91,7 +123,9 @@
 		
 		<div class="img-container">
 			<header>Mahouka <3	</header>
-			<img src="harry%20potter.jpg"> <span class="glyphicon glyphicon-plus"></span><img src="Technology.jpg"><span class="glyphicon glyphicon-arrow-right"><img src="mahouka.jpg">
+			<img src="harry%20potter.jpg"><span class="glyphicon glyphicon-plus"></span>
+			<img src="Technology.jpg"><span class="glyphicon glyphicon-arrow-right"></span>
+			<img src="mahouka.jpg">
 		</div>
 		<div><span>by </span><span class="user">ONII-SAMA </span></div>
 		<div class="post-tag">
@@ -100,12 +134,14 @@
 			<a>high school</a>
 			<a>fantasy</a>
 		</div>
-        
+		
 		<div class="line"></div>
 		
 		<div class="img-container">
 			<header>LOL	</header>
-			<img src="download.jpg"> <span class="glyphicon glyphicon-plus"></span><img src="clown.jpg"><span class="glyphicon glyphicon-arrow-right"><img src="download2.jpg">	
+			<img src="download.jpg"> <span class="glyphicon glyphicon-plus"></span>
+			<img src="clown.jpg"> <span class="glyphicon glyphicon-arrow-right"></span>
+			<img src="download2.jpg">	
 		</div>
 		<div><span>by </span><span class="user">ONICHAN </span></div>
         
@@ -113,75 +149,25 @@
 		
 		<div class="img-container">
 			<header>LOL	</header>
-			<img src="download.jpg"> <span class="glyphicon glyphicon-plus"></span><img src="clown.jpg"><span class="glyphicon glyphicon-arrow-right"><img src="download2.jpg">	
+			<img src="download.jpg"> <span class="glyphicon glyphicon-plus"></span>
+			<img src="clown.jpg"> <span class="glyphicon glyphicon-arrow-right"></span>
+			<img src="download2.jpg">	
+		</div>
+		<div><span>by </span><span class="user">ONICHAN </span></div>
+        
+		<div class="line"></div>
+		
+		<div class="img-container">
+			<header>LOL	</header>
+			<img src="download.jpg"> <span class="glyphicon glyphicon-plus"></span>
+			<img src="clown.jpg"> <span class="glyphicon glyphicon-arrow-right"></span>
+			<img src="download2.jpg">	
 		</div>
 		<div><span>by </span><span class="user">ONICHAN </span></div>
         
 		<div class="line"></div>
 		
     </div>
-
-<div id="signUp" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">SIGN UP</h4>
-            </div>
-            <form class="modal-body">
-				<div class="form-group">
-					<label for="inputFirstName">First Name</label>
-					<input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
-				</div>
-				<div class="form-group">
-					<label for="inputLastName">Last Name</label>
-					<input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
-				</div>
-				<div class="form-group">
-					<label for="inputEmail">Email</label>
-					<input type="email" class="form-control" id="inputEmail" placeholder="Email">
-				</div>
-				<div class="form-group">
-					<label for="inputPassword">Password</label>
-					<input type="password" class="form-control" id="inputPassword" placeholder="Password">
-				</div>
-				<div class="form-group">
-					<label for="repeatPassword">Repeat Password</label>
-					<input type="password" class="form-control" id="repeatPassword" placeholder="Password">
-				</div>
-			</form>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary">Proceed</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div id="logIn" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">LOG IN</h4>
-            </div>
-            <form class="modal-body">
-				<div class="form-group">
-					<label for="inputEmail2">Email</label>
-					<input type="email" class="form-control" id="inputEmail2" placeholder="Email">
-				</div>
-				<div class="form-group">
-					<label for="inputPassword2">Password</label>
-					<input type="password" class="form-control" id="inputPassword2" placeholder="Password">
-				</div>
-			</form>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary">Proceed</button>
-            </div>
-        </div>
-    </div>
-</div>
 
 <footer class="clear">
 	<div  class="width">
@@ -199,28 +185,6 @@
         <!-- jQuery Custom Scroller CDN -->
         <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 
-        <script type="text/javascript">
-            $('#signUp').on('shown.bs.modal', function () {
-   				 $('#inputFirstName').focus();
-			});
-
-			$('#logIn').on('shown.bs.modal', function () {
-   				 $('#inputEmail2').focus();
-			});
-
-			$(document).ready(function () {
-                $("#sidebar").mCustomScrollbar({
-                    theme: "minimal"
-                });
-
-                $('#sidebarCollapse').on('click', function () {
-                    $('#sidebar, #content').toggleClass('active');
-                    $('.collapse.in').toggleClass('in');
-                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-                });
-            });
-        </script>
-		
 		<script>
 		window.onscroll = function() {myFunction()};
 
@@ -235,5 +199,48 @@
 			}
 		}
 		</script>
+		
+		<script> 
+		function changeClass(x) { 
+			if (x.matches) { 
+				document.getElementById("navi").className="navbar navbar-inverse navbar-fixed-top"; 
+				}
+			else  {
+				document.getElementById("navi").className="navbar navbar-inverse"; 
+			} 
+		}
+
+		var x = window.matchMedia("(max-width: 768px)") 
+		changeClass(x)  
+		x.addListener(changeClass) 
+		</script> 
+		
+		<script type="text/javascript">
+            $(document).ready(function () {
+
+			$("#drawer").mCustomScrollbar({
+				theme: "minimal"
+			});
+
+			// when opening the drawer
+			$('#drawerCollapse').on('click', function () {
+				// open drawer
+				$('#drawer').addClass('active');
+				// fade in the overlay
+				$('.overlay').fadeIn();
+				$('.collapse.in').toggleClass('in');
+				$('a[aria-expanded=true]').attr('aria-expanded', 'false');
+			});
+
+		   
+			// if dismiss or overlay was clicked
+			$('#dismiss, .overlay').on('click', function () {
+			  // hide the drawer
+			  $('#drawer').removeClass('active');
+			  // fade out the overlay
+			  $('.overlay').fadeOut();
+			});
+		});
+        </script>
 </body>
 </html>
