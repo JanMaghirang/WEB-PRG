@@ -62,6 +62,11 @@ a, a:hover, a:focus {
 }
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> index
 /* ---------------------------------------------------
     STICKYBAR STYLE
 ----------------------------------------------------- */
@@ -110,6 +115,7 @@ a, a:hover, a:focus {
 	background:#fff;
 	overflow-y:auto;
 	overflow-x:hidden:
+<<<<<<< HEAD
 }
 
 .navbar-fixed-left .navbar-nav > li {
@@ -132,6 +138,30 @@ a, a:hover, a:focus {
 	background:#404040;
 }
 
+=======
+}
+
+.navbar-fixed-left .navbar-nav > li {
+	text-align:center;
+	float: none;
+	width: 220px;
+	margin-top:5px;
+}
+
+.navbar-fixed-left .navbar-nav > li > a , .navbar-fixed-left .navbar-nav > li > a:visited{
+	padding-top:5px;
+	padding-bottom:5px;
+	color: #000000;
+	font-size:16px;
+	width: 220px;
+}
+
+.navbar-fixed-left .navbar-nav > li > a:hover{
+	color: #fff;
+	background:#404040;
+}
+
+>>>>>>> index
 .navbar-fixed-left > #ctg{
 	margin-bottom:2px;
 	padding-left:20px;
@@ -143,7 +173,10 @@ a, a:hover, a:focus {
   padding-left: 160px;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> index
 /* ---------------------------------------------------
     SIDENAV SCROLLBAR STYLE
 ----------------------------------------------------- */
@@ -222,6 +255,7 @@ a, a:hover, a:focus {
 
 #drawer .drawer-list a{
 	color:black;
+<<<<<<< HEAD
 }
 
 #drawer .drawer-list a:hover{
@@ -264,6 +298,50 @@ a, a:hover, a:focus {
 	color:red;
 }
 
+=======
+}
+
+#drawer .drawer-list a:hover{
+	background-color:white;
+	color:black;
+}
+
+#drawer .drawer-list ul.components {
+    padding: 0 0 0 30px;
+    border-bottom: 1px solid red;
+}
+
+#drawer .user-group{
+	background: #1a1a1a;
+}
+
+#drawer .user-group ul{
+	padding:8px;
+	margin:0;
+}
+
+#drawer .user-group ul li{
+	padding:8px;
+	background-color:#e60000;
+	text-align:center;
+}
+
+#drawer .user-group ul:nth-child(2) li{
+	background-color:white;
+}
+
+#drawer .user-group a{
+	color:white;
+	padding:15px 60px 15px 60px;
+	text-decoration:none;
+	transition: all 0.3s;
+}
+
+#drawer .user-group ul:nth-child(2) a{
+	color:red;
+}
+
+>>>>>>> index
 #dismiss {
     width: 35px;
     height: 35px;
@@ -282,6 +360,17 @@ a, a:hover, a:focus {
 #dismiss:hover {
     background: #fff;
     color:#262626;
+<<<<<<< HEAD
+}
+
+.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    display: none;
+=======
 }
 
 .overlay {
@@ -308,7 +397,26 @@ input[type=text] {
 	margin-bottom:8px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
+>>>>>>> index
 }
+
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+	color:black;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 5px 12px 5px 20px;
+	margin-bottom:8px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
 
 /* ---------------------------------------------------
     CONTENT STYLE
@@ -330,6 +438,7 @@ input[type=text] {
 	width:250px;
 }
 
+<<<<<<< HEAD
 .post-tag{
 	color: #09f;
     font-weight: 700;
@@ -345,6 +454,8 @@ input[type=text] {
 	background:#fff;
 }
 
+=======
+>>>>>>> index
 .user{
 	font-size:17px;
 	color:red;
@@ -356,6 +467,10 @@ input[type=text] {
 	font-size:40px;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> index
 /* ---------------------------------------------------
     FOOTER STYLE
 ----------------------------------------------------- */
