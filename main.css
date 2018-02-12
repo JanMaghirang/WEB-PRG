@@ -139,6 +139,22 @@ a:active{
 	border:solid 4px;
 	border-style:outset;
 	text-align:center;
+	max-width: 300px;
+}
+
+.post-tag{
+	color: #09f;
+    font-weight: 700;
+}
+
+.post-tag a{
+	margin: 5px;
+}
+
+.post-tag a:hover{
+	color: #09c5ff;
+    font-weight: 900;
+	background:#fff;
 }
 
 .user{
