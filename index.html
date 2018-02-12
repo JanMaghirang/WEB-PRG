@@ -21,82 +21,140 @@
 
 <body>
 <!--Header-->
-<nav class="navbar navbar-inverse">
+<nav id="navi" class="navbar navbar-inverse">
 	<div class="container-fluid">	
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>                        
+			<button type="button" id="drawerCollapse" class="btn btn-info navbar-btn">
+				<i class="glyphicon glyphicon-menu-hamburger"></i>
 			</button>
 			<a class="navbar-brand" href="index.html">THINKING<span>POD</span></a>
-		</div>
-		
-		<div class="collapse navbar-collapse" id="myNavbar">
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Home</a></li>
-			</ul>
-			
-			<form class="navbar-form navbar-left" action="/action_page.php">
-				<div class="input-group">
-					<input type="text" class="form-control" placeholder="Search" name="search">
-					<div class="input-group-btn">
-						<button class="btn" type="submit">
-							<i class="glyphicon glyphicon-search"></i>
-						</button>
-					</div>
-				</div>
-			</form>
-			
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#signUp" role="button"  data-toggle="modal"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-				<li><a href="#logIn" role="button"  data-toggle="modal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-			</ul>
 		</div>
 	</div>
 </nav>
 
-<!--SideNav-->
-<div class="wrapper">
-    <!-- Sidebar Holder -->
-    <nav id="sidebar">
-        <div class="sidebar-header">
-            <h3>Bootstrap Sidebar</h3>
-        </div>
+<div class="overlay"></div>
+<!--Drawer-->
+<nav id="drawer">		
+	<div id="drawer-header">
+        <h3>THINKPOD</h3>
+    </div>
+			
+	<form> 
+		<input type="text" name="search" placeholder="Search">
+	</form> 
+	
+	<div id="dismiss">
+        <i class="glyphicon glyphicon-arrow-left"></i>
+    </div>
+			
+	<div class="user-group">
+		<ul class="list-unstyled components">
+			<li><a href="#signUp" role="button"  data-toggle="modal"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+		</ul>
+		<ul class="list-unstyled components">
+		<li><a href="#logIn" role="button"  data-toggle="modal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+		</ul>
+	</div>
+	
+	<div class="drawer-list">
+		<p id="ctg">Popular</p>
+		<ul class="list-unstyled components">
+			<li><a href="#">New</a></li>
+			<li><a href="#">Hot</a></li>
+			<li><a href="#">Trending</a></li>
+		</ul>
+				
+		<p id="ctg">Categories</p>
+		<ul class="list-unstyled components">
+			<li><a href="#">Comedy</a></li>
+			<li><a href="#">Romance</a></li>
+			<li><a href="#">Musical</a></li>
+			<li><a href="#">Action</a></li>
+			<li><a href="#">Drama</a></li>
+			<li><a href="#">Documentary</a></li>
+			<li><a href="#">Horror</a></li>
+			<li><a href="#">Animation</a></li>
+			<li><a href="#">Thriller</a></li>
+		</ul>
+	<div>
+            
+</nav>
 
-        <ul class="list-unstyled components">
-        <p>Dummy Heading</p>
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
-        </ul>
-	</nav>
+<!--StickyNav-->
+	<div id="stickybar">
+		<a href="#">New</a>
+		<a href="#">Hot</a>
+		<a href="#">Trending</a>
+		
+		<ul class="nav navbar-nav navbar-right">
+				<li><a href="#signUp" role="button"  data-toggle="modal"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+				<li><a href="#logIn" role="button"  data-toggle="modal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+		</ul>
+		
+	</div>
+
+<!--SideNav-->
+    <div class="navbar navbar-inverse navbar-fixed-left">
+		<p id="ctg">Categories</p>
+		<ul class="nav navbar-nav">
+			<li><a href="#">Comedy</a></li>
+			<li><a href="#">Romance</a></li>
+			<li><a href="#">Musical</a></li>
+			<li><a href="#">Action</a></li>
+			<li><a href="#">Drama</a></li>
+			<li><a href="#">Documentary</a></li>
+			<li><a href="#">Horror</a></li>
+			<li><a href="#">Animation</a></li>
+			<li><a href="#">Thriller</a></li>
+		</ul>
+	</div>
 
 <!-- Page Content Holder -->
-    <div id="content">
-		<div id="stickybar">
-			<button type="button" id="sidebarCollapse" class="btn navbar-btn">
-				<i class="glyphicon glyphicon-align-left"></i>
-			</button>
+    <div id="content">		
+		<div class="img-container">
+			<header>LOL	</header>
+			<img src="download.jpg"> <span class="glyphicon glyphicon-plus"></span>
+			<img src="clown.jpg"> <span class="glyphicon glyphicon-arrow-right"></span>
+			<img src="download2.jpg">	
 		</div>
+		<div><span>by </span><span class="user">ONICHAN </span></div>
+        
+		<div class="line"></div>
 		
-		<h2>Lorem ipsum dolor</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-        <div class="line"></div>
-
-        <h2>Lorem Ipsum Dolor</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-		<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-		<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-		<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <div class="line"></div>
-
+		<div class="img-container">
+			<header>LOL	</header>
+			<img src="download.jpg"> <span class="glyphicon glyphicon-plus"></span>
+			<img src="clown.jpg"> <span class="glyphicon glyphicon-arrow-right"></span>
+			<img src="download2.jpg">	
+		</div>
+		<div><span>by </span><span class="user">ONICHAN </span></div>
+        
+		<div class="line"></div>
+		
+		<div class="img-container">
+			<header>LOL	</header>
+			<img src="download.jpg"> <span class="glyphicon glyphicon-plus"></span>
+			<img src="clown.jpg"> <span class="glyphicon glyphicon-arrow-right"></span>
+			<img src="download2.jpg">	
+		</div>
+		<div><span>by </span><span class="user">ONICHAN </span></div>
+        
+		<div class="line"></div>
+		
+		<div class="img-container">
+			<header>LOL	</header>
+			<img src="download.jpg"> <span class="glyphicon glyphicon-plus"></span>
+			<img src="clown.jpg"> <span class="glyphicon glyphicon-arrow-right"></span>
+			<img src="download2.jpg">	
+		</div>
+		<div><span>by </span><span class="user">ONICHAN </span></div>
+        
+		<div class="line"></div>
+		
+		
     </div>
-</div>
+	
+
 
 <div id="signUp" class="modal fade">
     <div class="modal-dialog">
@@ -105,11 +163,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h4 class="modal-title">SIGN UP</h4>
             </div>
-<<<<<<< HEAD
-            <form class="">
-=======
             <form class="modal-body">
->>>>>>> footer
 				<div class="form-group">
 					<label for="inputFirstName">First Name</label>
 					<input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
@@ -146,11 +200,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h4 class="modal-title">LOG IN</h4>
             </div>
-<<<<<<< HEAD
-            <form class="">
-=======
             <form class="modal-body">
->>>>>>> footer
 				<div class="form-group">
 					<label for="inputEmail2">Email</label>
 					<input type="email" class="form-control" id="inputEmail2" placeholder="Email">
@@ -173,9 +223,11 @@
 		<p class="left">&copy; 2018 Game Merging. </p>
 		<p>This merging site allows you to see the awesome results of combining two fantastic games!</p>
 		<p>Attention Game devs! Get awesome inspirations from here! </p>
-		<p class="right">Jaw-dropping website by <a href="http://facebook.com/">JC & Brandon</a>
+		<p class="right">Jaw-dropping website by <a href="http://facebook.com/">JC & Brandon</a></p>
 	</div>
 </footer>
+
+
 
 <!-- jQuery CDN -->
         <script src="js/jquery-1.12.0.min.js"></script>
@@ -220,5 +272,49 @@
 			}
 		}
 		</script>
+		
+		<script> 
+		function changeClass(x) { 
+			if (x.matches) { 
+				document.getElementById("navi").className="navbar navbar-inverse navbar-fixed-top"; 
+				}
+			else  {
+				document.getElementById("navi").className="navbar navbar-inverse"; 
+			} 
+		}
+
+		var x = window.matchMedia("(max-width: 768px)") 
+		changeClass(x)  
+		x.addListener(changeClass) 
+		</script> 
+		
+		<script type="text/javascript">
+            $(document).ready(function () {
+
+			$("#drawer").mCustomScrollbar({
+				theme: "minimal"
+			});
+
+			// when opening the drawer
+			$('#drawerCollapse').on('click', function () {
+				// open drawer
+				$('#drawer').addClass('active');
+				// fade in the overlay
+				$('.overlay').fadeIn();
+				$('.collapse.in').toggleClass('in');
+				$('a[aria-expanded=true]').attr('aria-expanded', 'false');
+			});
+
+		   
+			// if dismiss or overlay was clicked
+			$('#dismiss, .overlay').on('click', function () {
+			  // hide the drawer
+			  $('#drawer').removeClass('active');
+			  // fade out the overlay
+			  $('.overlay').fadeOut();
+			});
+		});
+        </script>
+		
 </body>
 </html>
