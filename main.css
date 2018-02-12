@@ -62,11 +62,6 @@ a, a:hover, a:focus {
 }
 
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> index
 /* ---------------------------------------------------
     STICKYBAR STYLE
 ----------------------------------------------------- */
@@ -138,7 +133,6 @@ a, a:hover, a:focus {
 	background:#404040;
 }
 
-=======
 }
 
 .navbar-fixed-left .navbar-nav > li {
@@ -161,7 +155,6 @@ a, a:hover, a:focus {
 	background:#404040;
 }
 
->>>>>>> index
 .navbar-fixed-left > #ctg{
 	margin-bottom:2px;
 	padding-left:20px;
@@ -173,10 +166,6 @@ a, a:hover, a:focus {
   padding-left: 160px;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> index
 /* ---------------------------------------------------
     SIDENAV SCROLLBAR STYLE
 ----------------------------------------------------- */
@@ -255,7 +244,6 @@ a, a:hover, a:focus {
 
 #drawer .drawer-list a{
 	color:black;
-<<<<<<< HEAD
 }
 
 #drawer .drawer-list a:hover{
@@ -298,7 +286,6 @@ a, a:hover, a:focus {
 	color:red;
 }
 
-=======
 }
 
 #drawer .drawer-list a:hover{
@@ -341,7 +328,6 @@ a, a:hover, a:focus {
 	color:red;
 }
 
->>>>>>> index
 #dismiss {
     width: 35px;
     height: 35px;
@@ -351,6 +337,7 @@ a, a:hover, a:focus {
     position: absolute;
     top: 10px;
     right: 10px;
+	border-radius:8px;
     cursor: pointer;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
@@ -358,9 +345,8 @@ a, a:hover, a:focus {
 }
 
 #dismiss:hover {
-    background: #fff;
-    color:#262626;
-<<<<<<< HEAD
+    background: #404040;
+    color:#fff;
 }
 
 .overlay {
@@ -370,7 +356,6 @@ a, a:hover, a:focus {
     background: rgba(0, 0, 0, 0.7);
     z-index: 998;
     display: none;
-=======
 }
 
 .overlay {
@@ -397,7 +382,6 @@ input[type=text] {
 	margin-bottom:8px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
->>>>>>> index
 }
 
 input[type=text] {
@@ -438,7 +422,6 @@ input[type=text] {
 	width:250px;
 }
 
-<<<<<<< HEAD
 .post-tag{
 	color: #09f;
     font-weight: 700;
@@ -454,8 +437,6 @@ input[type=text] {
 	background:#fff;
 }
 
-=======
->>>>>>> index
 .user{
 	font-size:17px;
 	color:red;
@@ -467,10 +448,6 @@ input[type=text] {
 	font-size:40px;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> index
 /* ---------------------------------------------------
     FOOTER STYLE
 ----------------------------------------------------- */
@@ -536,7 +513,7 @@ footer p a:hover { color:#0C3A85; border-bottom-color: #0C3A85; }
 	}
 	
 	#content {
-		margin: 0px 10px 10px 100px;
+		margin: 0px 10px 10px 10px;
 		padding-top:60px;
 		background:#fff;
 		min-height: 100vh;
@@ -554,7 +531,7 @@ footer p a:hover { color:#0C3A85; border-bottom-color: #0C3A85; }
 		margin-top:16px;
 		position: absolute;
 		left: 38%;
-		margin-left: -50px !important;
+		margin-left: -40px !important;
 		display: block;
 	}
 }
