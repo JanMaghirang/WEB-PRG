@@ -24,9 +24,14 @@
 <nav id="navi" class="navbar navbar-inverse">
 	<div class="container-fluid">	
 		<div class="navbar-header">
-			<button type="button" id="drawerCollapse" class="btn btn-info navbar-btn">
-				<i class="glyphicon glyphicon-menu-hamburger"></i>
-			</button>
+			<!-- <button type="button" id="drawerCollapse" class="btn btn-info navbar-btn"> -->
+				<!-- <i class="glyphicon glyphicon-menu-hamburger"></i> -->
+			<!-- </button> -->
+			<div id="drawerCollapse">
+				<span></span>				 
+				<span></span>
+				<span></span>
+			</div>
 			<a class="navbar-brand" href="index.html">THINKING<span>POD</span></a>
 		</div>
 	</div>
@@ -52,7 +57,7 @@
 			<li><a href="#signUp" role="button"  data-toggle="modal"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
 		</ul>
 		<ul class="list-unstyled components">
-		<li><a href="#logIn" role="button"  data-toggle="modal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+			<li id="log"><a href="#logIn" role="button"  data-toggle="modal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 		</ul>
 	</div>
 	
@@ -343,14 +348,30 @@
 				theme: "minimal"
 			});
 
-			// when opening the drawer
-			$('#drawerCollapse').on('click', function () {
-				// open drawer
-				$('#drawer').addClass('active');
-				// fade in the overlay
-				$('.overlay').fadeIn();
-				$('.collapse.in').toggleClass('in');
-				$('a[aria-expanded=true]').attr('aria-expanded', 'false');
+			<!-- $('#drawerCollapse').click(function(){ -->
+						<!-- if($('drawerCollapse').hasClass("open")){ -->
+							<!-- $('#drawer').removeClass('active'); -->
+							<!-- $('.overlay').fadeOut(); -->
+							<!-- $('drawerCollapse').removeClass('open'); -->
+						<!-- }else{ -->
+							<!-- $('#drawer').addClass('active'); -->
+							<!-- $('.overlay').fadeIn(); -->
+							<!-- $('.collapse.in').toggleClass('in'); -->
+							<!-- $('a[aria-expanded=true]').attr('aria-expanded', 'false'); -->
+							<!-- $(this).addClass('open'); -->
+						<!-- } -->
+				<!-- }); -->
+				
+			
+			// when opening the drawer 
+			$('#drawerCollapse').on('click', function () { 
+				// open drawer 
+				$('#drawer').addClass('active'); 
+				// fade in the overlay 
+				$('.overlay').fadeIn(); 
+				$('.collapse.in').toggleClass('in'); 
+				$('a[aria-expanded=true]').attr('aria-expanded', 'false'); 
+			
 			});
 
 		   
