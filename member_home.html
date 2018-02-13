@@ -93,9 +93,12 @@
 		<a href="#">Hot</a>
 		<a href="#">Trending</a>
 		
-		<form class="nav navbar-nav navbar-left"> 
-			<input type="text" name="search" placeholder="Search">
-		</form>
+		<div class="search-container">
+			<form action="/action_page.php">
+				<input type="text" placeholder="Search" name="search">
+				<button type="submit"><i class="fa fa-search"></i></button>
+			</form>
+		</div>
 	
 		<ul class="nav navbar-nav navbar-right">
 			<li><a href="post.html" role="button" class="upload" ><span class="glyphicon glyphicon-plus"></span> Post</a></li>
