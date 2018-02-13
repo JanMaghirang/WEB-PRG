@@ -23,6 +23,39 @@ a, a:hover, a:focus {
     margin: 40px 0;
 }
 
+.add-post {
+	top: 0;
+    position: fixed;
+    right: 0;
+    margin-top: 150px;
+    font-size: 30px;
+    border-radius: 40px;
+    color: white;
+    background-color: red;
+    text-align: center;
+    padding-left: 12px;
+    padding-top: 6px;
+    padding-right: 10px;
+	border: none;
+	box-shadow:   0 0 10px #1a1a1a ;
+}
+
+.add-post:hover {
+	box-shadow:  none ;
+}
+
+.name {
+	color: red;
+}
+
+.add-img {
+	padding: 100px 10px;
+	background-color: #5e5e5e;
+	vertical-align:middle;
+	border: solid 4px;
+    border-style: outset;
+	position: static;
+}
 /* ---------------------------------------------------
     NAVBAR STYLE
 ----------------------------------------------------- */
@@ -433,6 +466,12 @@ input[type=text] {
     transition: width 0.4s ease-in-out;
 }
 
+.img-container .inputHeader{
+	font-size: 40px;
+	display: block;
+	font-family: 'Poppins', sans-serif;
+}
+
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
@@ -450,7 +489,7 @@ input[type=text] {
 	border:solid 4px;
 	border-style:outset;
 	text-align:center;
-	width:250px;
+	max-width:250px;
 }
 
 .post-tag{
