@@ -28,6 +28,7 @@ a, a:hover, a:focus {
     position: fixed;
     right: 0;
     margin-top: 150px;
+	margin-right: 10px;
     font-size: 30px;
     border-radius: 40px;
     color: white;
@@ -486,9 +487,12 @@ input[type=text] {
   margin-top: 9px;
   margin-bottom:4px;
   font-size: 16px;
-  border:none;
-  border-top-left-radius:10px;
-  border-bottom-left-radius:10px;
+}
+
+.searchBar{
+	border:none;
+	border-top-left-radius:10px;
+	border-bottom-left-radius:10px;
 }
 
 .search-container button {
@@ -509,6 +513,11 @@ input[type=text] {
 	font-size: 40px;
 	display: block;
 	font-family: 'Poppins', sans-serif;
+	border-style: inset;
+}
+
+.tagInput{
+	border: inset;
 }
 
 /* ---------------------------------------------------
@@ -658,6 +667,7 @@ footer p a:hover { color:#0C3A85; border-bottom-color: #0C3A85; }
 	}
   
 	input[type=text] {
-		border: 1px solid #ccc;  
+		border: 1px solid #ccc;
+
 	}
 }
