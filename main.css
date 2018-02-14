@@ -63,6 +63,9 @@ a, a:hover, a:focus {
 	background-color: red;
 	font-size: 20px;
 }
+.post {
+	background-color: red;
+}
 /* ---------------------------------------------------
     NAVBAR STYLE
 ----------------------------------------------------- */
