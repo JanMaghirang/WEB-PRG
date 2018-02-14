@@ -57,6 +57,12 @@ a, a:hover, a:focus {
     border-style: outset;
 	position: static;
 }
+
+.edit {
+	float: right;
+	background-color: red;
+	font-size: 20px;
+}
 /* ---------------------------------------------------
     NAVBAR STYLE
 ----------------------------------------------------- */
