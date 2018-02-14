@@ -50,12 +50,34 @@ a, a:hover, a:focus {
 }
 
 .add-img {
-	padding: 100px 10px;
+	height: 255px;
+	width: 255px;
 	background-color: #5e5e5e;
 	vertical-align:middle;
-	border: solid 4px;
-    border-style: outset;
 	position: static;
+}
+
+.imgSample {
+	vertical-align: middle;
+	text-align: center;
+}
+.img-container {
+
+
+}
+#selectedFile {
+	display: none;
+
+}
+
+
+.edit {
+	float: right;
+	background-color: red;
+	font-size: 20px;
+}
+.post {
+	background-color: red;
 }
 /* ---------------------------------------------------
     NAVBAR STYLE
@@ -518,6 +540,12 @@ input[type=text] {
 
 .tagInput{
 	border: inset;
+}
+
+.img-container .inputHeader{
+	font-size: 40px;
+	display: block;
+	font-family: 'Poppins', sans-serif;
 }
 
 /* ---------------------------------------------------
