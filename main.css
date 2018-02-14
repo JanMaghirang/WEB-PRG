@@ -75,7 +75,14 @@ a, a:hover, a:focus {
 	float: right;
 	background-color: red;
 	font-size: 20px;
+	box-shadow:   0 0 10px #1a1a1a ;
 }
+
+.edit:hover {
+	box-shadow: none;
+	background-color: red;
+}
+
 .post {
 	background-color: red;
 }
