@@ -50,13 +50,26 @@ a, a:hover, a:focus {
 }
 
 .add-img {
-	padding: 100px 10px;
+	height: 255px;
+	width: 255px;
 	background-color: #5e5e5e;
 	vertical-align:middle;
-	border: solid 4px;
-    border-style: outset;
 	position: static;
 }
+
+.imgSample {
+	vertical-align: middle;
+	text-align: center;
+}
+.img-container {
+
+
+}
+#selectedFile {
+	display: none;
+
+}
+
 
 .edit {
 	float: right;
